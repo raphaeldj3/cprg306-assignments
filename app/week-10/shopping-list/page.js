@@ -54,7 +54,7 @@ export default function ShoppingListPage() {
     return (
       <main className="p-6 text-center">
         <p>You are not logged in.</p>
-        <Link href="/week-9">
+        <Link href="/week-10">
           <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
             Go to Login
           </button>
