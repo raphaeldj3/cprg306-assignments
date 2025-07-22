@@ -15,6 +15,7 @@ export default function ShoppingListPage() {
   const [selectedItemName, setSelectedItemName] = useState("");
   const { user, firebaseSignOut } = useUserAuth();
 
+
   async function loadItems() {
     if (!user) return;
     const fetchedItems = await getItems(user.uid);
@@ -68,7 +69,7 @@ export default function ShoppingListPage() {
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-4xl font-extrabold -center">Shopping List</h1>
 
-        <Link href="/week-9">
+        <Link href="/week-10">
           <button
             onClick={handleLogout}
             className="bg-red-600 text-white px-4 py-2 rounded"
